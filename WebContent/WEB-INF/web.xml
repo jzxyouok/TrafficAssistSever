@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>TrafficAssistSever</display-name>
+  <welcome-file-list>
+    <welcome-file>NewFile.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>LoginLet</servlet-name>
+    <servlet-class>com.servlet.LoginLet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RegisterLet</servlet-name>
+    <servlet-class>com.servlet.RegisterLet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SaveHistory</servlet-name>
+    <servlet-class>com.servlet.SaveHistory</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginLet</servlet-name>
+    <url-pattern>/LoginLet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterLet</servlet-name>
+    <url-pattern>/RegisterLet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SaveHistory</servlet-name>
+    <url-pattern>/SaveHistory</url-pattern>
+  </servlet-mapping>
+</web-app>
